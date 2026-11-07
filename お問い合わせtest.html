@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(234, 255, 177);
+        }
+    </style>
+</head>
+ <header>
+        <h1>お問い合わせ</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="about.html">会社概要</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<body>
+    <h1>キャリア登録</h1>
+    <form action="#" method="post">
+        <dl>
+            <dt>氏名</dt>
+            <dd>
+                <!--text時のvalueは初期値の設定-->
+                <input type="text" name="name" placeholder="（例）山田たろう">
+            </dd>
+            <dt>パスワード</dt>
+            <dd>
+                <!-- パスワード入力 -->
+                <input type="password" name="password" placeholder="パスワード">
+            </dd>
+            <dt>メールアドレス</dt>
+            <dd>
+                <!--@が入っていないとエラーになる -->
+                <input type="email" name="email" placeholder="メールアドレス">
+            </dd>
+            <dt>転職回数</dt>
+            <dd>
+                <input type="number" name="job_changes" min="0" max="10" placeholder="回数">
+            </dd>
+            <dt>ポートフォリオサイトリンク</dt>
+            <dd>
+                <input type="url" name="URL" placeholder="https://example.com">
+            </dd>
+            <dt>性別</dt>
+            <dd>
+            <!--ラジオボタンのnameは同じにすることで、どれか一つしか選択できないようになる-->
+            <input type="radio" name="gender" value="male">男性
+            <input type="radio" name="gender" value="female">女性
+            </dd>
+            <dt>IT業界での経験がありましたら☑️をいれてください</dt>
+            <dd>
+                <!--value"1"はチェックされたときに送信される値-->
+                <input type="checkbox" name="experience" value="1">経験あり
+            </dd>
+            <dt>希望職種</dt>
+            <dd>
+                <select name="job_type">
+                    <option value="choice">選択してください</option>
+                    <option value="engineer">エンジニア</option>
+                    <option value="designer">デザイナー</option>
+                    <option value="sales">営業</option>
+                    <option value="consultant">コンサルタント</option>
+                </select>
+            </dd>
+            <dt>自己PR</dt>
+            <dd>
+            <!--colsで高さ、rowsで幅の指定-->
+                <textarea name="free" cols="30" rows="10" placeholder="自己PR"></textarea>
+            </dd>
+        </dl>
+        <input type="submit" value="送信">
+    </form>
+        <aside>
+            <h2>よくある質問</h2>
+            <p>お問い合わせの前に、よくある質問をご確認ください。</p>
+            <ul>
+                <li><a href="faq.html#question1">注文のキャンセルはできますか？（リンクは何でも良い）</a></li>
+                <li><a href="faq.html#question2">返品・交換の条件は？（リンクは何でも良い）</a></li>
+                <li><a href="faq.html#question3">送料はいくらですか？（リンクは何でも良い）</a></li>
+            </ul>
+        </aside>
+
+        <section>
+            <h2>会社情報</h2>
+            <article>
+                <h3>所在地</h3>
+                <p>住所：東京都千代田区○○ 1-2-3</p>
+            </article>
+            <article>
+                <h3>お問い合わせ先</h3>
+                <ul>
+                    <li>電話番号：03-1234-5678</li>
+                    <li>メール：info@example.com</li>
+                </ul>
+            </article>
+        </section>
+
+    <footer>
+        <small>2025 お問い合わせサイト</small>
+    </footer>
+</body>
+</html>
